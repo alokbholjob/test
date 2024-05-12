@@ -1,0 +1,257 @@
+body {
+    margin: 0px;
+    background: lightsteelblue;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: red;
+    font-size: 80px;
+}
+
+header ul {
+    margin: 0px;
+    background: linear-gradient(to right,lightslategrey, orangered, lightsalmon, orangered);
+    text-align: center;
+}
+
+header ul li {
+    padding: 20px 40px 20px;
+    display: inline-block;
+}
+
+header ul li:hover {
+    cursor: pointer;
+    background: yellowgreen;
+}
+
+header ul li a {
+   color: white;
+   font-size: 22px;
+   text-decoration: none;
+}
+
+#banner {
+    height: 450px;  
+    background-image: url("../../images/elevated-negril-header-5.png");
+    background-size: 100% 100%;
+
+    animation: myBanner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myBanner {
+    50%{ background-image: url('../../images/botanico-logo-6.jpeg'); }
+    100%{ background-image: url('../../images/Mendocino-Experience-9.png'); }
+}
+
+#footer-container {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    background: linear-gradient(to left,lightslategrey, orangered, lightsalmon, orangered);
+
+    color:white;
+    bottom: 0px;
+    position: fixed;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 1%;
+}
+
+#info {
+    padding: 0px 10% 0px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: blue;
+    color: white;
+    font-size: 22px;
+}
+
+header {
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
+}
+
+.product {
+    margin: 2%;
+    padding: 2%;
+    width: 23.33%;
+    height: 350px;
+    display: inline-block;
+    background-image: linear-gradient(blue, orange);
+    border-radius: 10px;
+}
+
+.product:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px orange;
+}
+
+.product h2 {
+    color: lightsalmon;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.product p {
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.product img {
+    width: 100%;
+    height: 210px;
+}
+
+#helpCenter {
+    text-align: center;
+    text-transform: capitalize;
+    color: blueviolet;
+    font-size: 35px;
+    margin: 40px 0px 40px;
+}
+
+@keyframes colorChange {
+    20%{ color: red; }
+    40%{ color: green; }
+    60%{ color: brown; }
+    80%{ color: yellowgreen; }
+}
+
+#helpCenter {
+    animation: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    /* display: inline-block; */
+}
+
+.aboutPhoto img {
+    margin: 2%;
+    width: 200px;
+    height: 200px;
+}
+
+#about {
+    width: 52%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#contact {
+    width: 23%;
+    margin: 4%;
+    padding: 2%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.row {
+    min-height: 75px;
+    text-align: left;
+}
+
+.smallInput, .highInput {
+    width: 100%;
+    margin: 1%;
+}
+
+.smallInput {
+    height: 30px;
+}
+
+.highInput {
+    height: 80px;
+}
+
+button {
+    margin-top: 40px;
+    padding: 7px 30px 7px;
+    background: orangered;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blue;
+    cursor: pointer;
+    color: white;
+}
+
+.service {
+    display: inline-block;
+    margin: 2%;
+    padding: 1%;
+    text-align: center;
+    width: 27%;
+    box-shadow: 0px 0px 2px grey;
+    /* box-shadow: 10px 10px 10px grey; */
+    border-radius: 7px;
+    transition: box-shadow 0.5s;
+}
+
+/* .service p {
+    text-align: justify;
+    word-break: break-all;
+} */
+
+.service:hover {
+    box-shadow: 0px 0px 20px red;
+    cursor: pointer;
+}
+.blue {
+    color: blue;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+
+.purple {color: purple;}
+.maroon {color: maroon;}
+.darkcyan {color: darkcyan;}
+
+.service h2 {
+    color: whitesmoke;
+}
+
+/* Contact Us page */
+
+fieldset {
+    width: 500px;
+    margin: 50px auto 50px;
+    border: 2px solid orangered;
+    border-radius: 6px;
+    padding: 15px;
+    transition: box-shadow 0.5s;
+}
+
+fieldset:hover {
+    box-shadow: 0px 0px 20px orangered;
+}
+
+legend {
+    padding: 7px 30px 7px;
+    font-size: 20px;
+    background: orangered;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+fieldset table {
+    width: 100%;
+}
