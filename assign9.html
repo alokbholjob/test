@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> New Admission Form </title>
+    <link rel="stylesheet" href="../../Bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../fontawesome-free/css/all.css">
+    <script src="../dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <h3 class="text-center text-primary fw-bold"> <i class="fa fa-user-plus"></i> New Admission </h3>
+            <div class="col-md-3"></div>
+            <div class="col-md-6  border border-primary rounded">
+                <h4 class="text-primary bg-primary-subtle text-center"> Student Details </h4>
+
+                <div class="col-12 mb-3">
+                    <label for="stName" class="form-label">Student Name <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control" id="stName">
+                </div>
+
+                <div class="row col-12 mb-3">
+                    <label for="dob" class="form-label">Date Of Birth <i class="text-danger">*</i></label>
+                    <div class="row col-12">
+                        <div class="col-4">
+                            <input type="number" class="form-control" placeholder="day">
+                        </div>
+                        <div class="col-4">
+                            <input type="number" class="form-control" placeholder="month">
+                        </div>
+                        <div class="col-4">
+                            <input type="number" class="form-control" placeholder="year">
+                        </div>
+                    </div>
+                </div> <!-- end -->
+
+                <div class="row col-12 mb-3">
+                    <label for="dob" class="form-label"> Admission Class <i class="text-danger">*</i></label>
+                    <div class="col-6">
+                        <select class="form-select">
+                            <option value="1">one</option>
+                            <option value="2">two</option>
+                            <option value="3">three</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select" selected>
+                            <option value="1"> Choose Section </option>
+                            <option value="2">two</option>
+                            <option value="3">three</option>
+                        </select>
+                    </div>
+                </div> <!-- end -->
+
+                <div class="row col-12 mb-3">
+                    <label for="admissionDate" class="form-label">Date Of Admission <i class="text-danger">*</i></label>
+                    <div class="row col-12">
+                        <div class="col-4">
+                            <input type="number" class="form-control" placeholder="day">
+                        </div>
+                        <div class="col-4">
+                            <input type="number" class="form-control" placeholder="month">
+                        </div>
+                        <div class="col-4">
+                            <input type="number" class="form-control" placeholder="year">
+                        </div>
+                    </div>
+                </div> <!-- end -->
+
+                <div class="col-12 mb-3">
+                    <label for="addSession" class="form-label">Admission Session <i class="text-danger">*</i></label>
+                    <select class="form-select" selected>
+                        <option value="1"> Choose Session </option>
+                        <option value="2">two</option>
+                        <option value="3">three</option>
+                    </select>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label for="oldSchool" class="form-label"> Old School Name <i class="text-danger">*</i></label>
+                    <input type="text" class="form-control" id="oldSchool">
+                </div>
+
+                <div class="text-center mb-2">
+                    <button class="btn btn-outline-primary"> Submit </button>
+                </div>
+            </div> <!-- form end -->
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+</html>
